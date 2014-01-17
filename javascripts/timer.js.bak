@@ -11,7 +11,7 @@ $(function(){
 function startTimer(){
   var sec_count = 0;
   var min_count = 0;
-  time_counter = setInterval(function(){
+  var time_counter = setInterval(function(){
     sec_count += 1;
     if (sec_count === 5){
       min_count += 1;
