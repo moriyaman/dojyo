@@ -1,0 +1,23 @@
+<html lang="ja" ng-app>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="style/style.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="javascripts/jquery-2.0.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
+    <script type="text/javascript" src="javascripts/timer_angular.js"></script>
+  </head>
+  <body ng-controller="timerCtrl">
+    <h1 class="ac">{{str}}</h1>
+    <div class="ac">
+      <img src="images/jirou.jpg">
+    </div>
+    <div>
+      <form class="ac">
+        <span class="min">{{min_time}}</span> :
+        <span class="sec">{{sec_time}}</span>
+        <input type="button" value="START" ng-click="startTimer()">
+        <input type="button" value="STOP" ng-click="stopTimer()">
+      </form>
+    </div>
+  </body>
+</html>
