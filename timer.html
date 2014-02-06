@@ -1,21 +1,23 @@
-<html>
+<html lang="ja" ng-app>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="style/style.css" media="all" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="javascripts/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="javascripts/timer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
   </head>
   <body>
-    <h1 class="ac">美味しいラーメンが食べたいか！？</h1>
+    <h1 class="ac">美味しいラーメンが食べたいか！？{{name}}</h1>
     <div class="ac">
       <img src="images/jirou.jpg">
+      <input type="text" ng-model="name">
     </div>
     <form class="ac">
       <span class="time">00</span> :
       <span class="min">00</span> :
       <span class="sec">00</span>
-        <input type="button" value="START" onclick="history.back()">
-        <input type="button" value="STOP" onclick="history.back()">
+        <input id="startBtn" type="button" value="START">
+        <input id="stopBtn" type="button" value="STOP">
     </form>
   </body>
 </html>
